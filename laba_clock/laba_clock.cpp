@@ -42,59 +42,59 @@ void foo(int hour, int min) {
 					else
 						std::cout << hour << " часа ";
 
-	minN(min);
-	if (min == 0) {
-		std::cout << " ночи " << " ровно ";
-	}
-			else
-				std::cout << " ночи ";
+								minN(min);
+										if (min == 0) {
+											std::cout << " ночи " << " ровно ";
+										}
+												else
+													std::cout << " ночи ";
 
 }
 
 if (hour >= 5 && hour < 12) {
 	hourN(hour);
 
-	minN(min);
-	if (min == 0) {
-		std::cout << " утра " << " ровно ";
-	}
-	else
-		std::cout << " утра ";
+			minN(min);
+			if (min == 0) {
+				std::cout << " утра " << " ровно ";
+			}
+					else
+						std::cout << " утра ";
 }
 
 if (hour >= 12) {
 	hour -= 12;
-	if (hour >= 0 && hour < 6) {
-		if (hour == 1) {
-			std::cout << hour << " час ";
-		}
-		else if (hour == 0) {
-			hourN(hour);
-		}
-		else
-			std::cout << hour << " часа ";
+		if (hour >= 0 && hour < 6) {
+			if (hour == 1) {
+				std::cout << hour << " час ";
+			}
+				else if (hour == 0) {
+					hourN(hour);
+				}
+					else
+						std::cout << hour << " часа ";
 
 
-		minN(min);
-		if (min == 0) {
-			std::cout << " дня " << " ровно ";
+							minN(min);
+								if (min == 0) {
+									std::cout << " дня " << " ровно ";
+								}
+									else
+										std::cout << " дня ";
 		}
-		else
-			std::cout << " дня ";
-	}
 
 	if (hour >= 6 && hour < 12) {
 		hourN(hour);
 
 		minN(min);
 
-		if (min == 0) {
-			std::cout << " вечера " << " ровно ";
-		}
-		else
-			std::cout << " вечера ";
-	}
-}
+			if (min == 0) {
+				std::cout << " вечера " << " ровно ";
+			}
+						else
+							std::cout << " вечера ";
+					}
+			}
 
 }
 
