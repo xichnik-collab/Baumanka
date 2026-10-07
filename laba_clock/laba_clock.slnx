@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="laba_clock.vcxproj" Id="9f80feaa-e5e6-41b2-99a6-36f16fa289dc" />
+</Solution>
