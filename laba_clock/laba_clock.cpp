@@ -32,22 +32,22 @@ void foo(int hour, int min) {
 		return;
 	}
 
-if (hour >= 0 && hour < 5) {
-	if (hour == 1) {
-		std::cout << hour << " час ";
-	}
-	else if (hour == 0) {
-		hourN(hour);
-	}
-	else
-		std::cout << hour << " часа ";
+			if (hour >= 0 && hour < 5) {
+				if (hour == 1) {
+					std::cout << hour << " час ";
+				}
+					else if (hour == 0) {
+						hourN(hour);
+					}
+					else
+						std::cout << hour << " часа ";
 
 	minN(min);
 	if (min == 0) {
 		std::cout << " ночи " << " ровно ";
 	}
-	else
-		std::cout << " ночи ";
+			else
+				std::cout << " ночи ";
 
 }
 
@@ -98,26 +98,28 @@ if (hour >= 12) {
 
 }
 
-void hourN(int x) {
-	std::cout << x << " часов ";
 
-}
+	void hourN(int x) {
+		std::cout << x << " часов ";
 
-void minN(int y) {
-	if (y == 1 or y == 21 or y == 31 or y == 41 or y == 51) {
-		std::cout << y << " минута ";
+	}
+
+
+		void minN(int y) {
+			if (y == 1 or y == 21 or y == 31 or y == 41 or y == 51) {
+				std::cout << y << " минута ";
 		 
-	}
-	else if (y > 1 && y < 5 or y >21 && y < 25 or y>31 && y < 35 or y>41 && y < 45 or y>51 && y < 55) {
-		std::cout << y << " минуты ";
-	}
-	else{
-		if (y == 0) {
+			}
+					else if (y > 1 && y < 5 or y >21 && y < 25 or y>31 && y < 35 or y>41 && y < 45 or y>51 && y < 55) {
+						std::cout << y << " минуты ";
+					}
+							else{
+								if (y == 0) {
 			
+								}
+										else
+											std::cout << y << " минут ";
+							}
+
+
 		}
-		else
-			std::cout << y << " минут ";
-	}
-
-
-}
